@@ -1,21 +1,3 @@
-html, body { height: 100%; }
-body {
-  display: flex;
-  flex-direction:  column;
-  justify-content: center;
-  align-items:     center;
-  background-image: -webkit-radial-gradient(
-    center top,  circle farthest-corner,  #FFF 0%, #D8DFE9 100%);
-  background-image: radial-gradient(
-    circle farthest-corner at center top, #FFF 0%, #D8DFE9 100%);
-  overflow: hidden;
-}
-
-@font-face {
-  font-family: icon;
-  src: url('http://bennettfeely.com/fonts/icons.woff');
-}
-
 @mixin flip-cover($name, $content, $color, $width) {
   .#{$name}-section, .#{$name}-section * { box-sizing: border-box; }
   .#{$name}-section, .#{$name}-section div { transition-duration: .6s; }
