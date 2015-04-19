@@ -1,20 +1,20 @@
-function flipCover (className, options) {
-  var options;
-  if (typeof className === "object") {
-    options = className;
+function flipCover (css, options) {
+  var options = options || {};
+  if (typeof css === "object") {
+    options = css;
   } else {
-    options.className = className;
+    options.css = css;
   }
 
-  var className = options.className;
+  var css = options.css;
   var url = options.url;
-  var linkName = options.linkName;
+  var text = options.text || "";
 
-  var $section = $(".flip-cover-" + className).addClass(className + "-section");
-  var $button = $("<div>").addClass(className + "-button");
-  $button.html("<a href='" + url + "'>" + linkName + "</a>");
-  var $cover = $("<div>").addClass(className + "-cover");
-  $cover.html("<div class='" + className + "-outer'></div><div class='" + className + "-inner'></div>");
+  var $section = $(".flip-cover-" + css).addClass(css + "-section");
+  var $button = $("<div>").addClass(css + "-button");
+  $button.html($("<a>").text(text).attr("href", url));
+  var $cover = $("<div>").addClass(css + "-cover");
+  $cover.html("<div class='" + css + "-outer'></div><div class='" + css + "-inner'></div>");
   $section.html($button);
   $cover.insertAfter($button);
  };
