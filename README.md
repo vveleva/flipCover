@@ -73,29 +73,20 @@ Preview:
 ![dribbble][dribbble]
 
 <br>
-### Email without a link
+### Example of an email without a link
 
-In your HTML file:
-
+HTML:
 ```html
 <div class="flip-cover-email"></div>
 ```
 
-In your JS file:
-
+JS:
 ```js
-// Require the file
-//= require flip_cover
-
 flipCover("email", { text: "user@example.com" });
 ```
 
-In your CSS file:
-
+CSS:
 ```scss
-// Import the mixins
-@import "flip_cover.scss"
-
 @include flip-cover("email", "example", #F80, 80px);
 ```
 Preview:
