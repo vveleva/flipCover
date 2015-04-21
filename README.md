@@ -1,27 +1,28 @@
-# .flipCover(cssName [, options])
+# flipCover
 
 FlipCover is a CSS/JS mixin for styling social media links.
 
-### [Demo](http://codepen.io/vveleva/pen/Areng)
-
-
-## Contents
-- `.flipCover(css)`
-- `.flipCover(css, jsObject)`
-- `.flipCover(jsObject)`
+### [Demo on CodePen](http://codepen.io/vveleva/pen/Areng)
 
 
 # API
 
+
 ### .flipCover(css [, options])
 
-#### Accepts
+#### Contents
+- `.flipCover(css)`
+- `.flipCover(css, jsObject)`
+- `.flipCover(jsObject)`
+
+<br>
 
 | Options        | Description|
 | ------------- |:-------------:|
-| `css`      | name of CSS class of your choice |
+| `css`      | CSS class of your choice |
 | `text` | text inside the button      |
 | `url`     | link for text      |
+<br>
 
 # Usage
 
