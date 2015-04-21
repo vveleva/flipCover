@@ -34,7 +34,6 @@ In your HTML file:
 
 ```html
 <div class="flip-cover-dribbble"></div>
-<div class="flip-cover-email"></div>
 ```
 
 In your JS file:
@@ -52,9 +51,6 @@ flipCover({
   url: "https://dribbble.com/vveleva",
   text: "vveleva"
 });
-
-flipCover("email", { text: "user@example.com" });
-
 ```
 
 In your CSS file:
@@ -65,8 +61,6 @@ In your CSS file:
 
 // Call mixins
 @include flip-cover("dribbble", "cover text", #FC1786, 80px);
-@include flip-cover("email", "example", #FC1786, 80px);
-
 ```
 Preview:
 
