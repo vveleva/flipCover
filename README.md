@@ -68,10 +68,11 @@ In your CSS file:
 @include flip-cover("email", "example", #FC1786, 80px);
 
 ```
+Preview:
 
-![dribbble](dribbble)
+![dribbble][dribbble]
 
-
+<br>
 ### Email without a link
 
 In your HTML file:
@@ -97,8 +98,9 @@ In your CSS file:
 
 @include flip-cover("email", "example", #F80, 80px);
 ```
+Preview:
 
-![email](email)
+![email][email]
 
 
 [dribbble]: ./screenshots/dribbble.png
