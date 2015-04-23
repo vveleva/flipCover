@@ -1,15 +1,16 @@
 function flipCover (css, options) {
   var options = options || {};
+
   if (typeof css === "object") {
     options = css;
   } else {
     options.css = css;
   }
 
-  var css = options.css;
-  var url = options.url;
-  var text = options.text || css;
-  var width = options.width;
+  var css =    options.css;
+  var url =    options.url;
+  var text =   options.text || css;
+  var width =  options.width;
   var height = options.height;
 
   var $section = $(".flip-cover-" + css).addClass(css + "-section");
@@ -27,8 +28,8 @@ function flipCover (css, options) {
 
     var lineHeight = ':after{ line-height: ' + height + ';}';
     var $outerStyle = $('<style>').text('.' + css + '-outer' + lineHeight);
-    $outerStyle.appendTo($outer);
     var $innerStyle = $('<style>').text('.' + css + '-inner' + lineHeight);
+    $outerStyle.appendTo($outer);
     $innerStyle.appendTo($inner);
   }
 
