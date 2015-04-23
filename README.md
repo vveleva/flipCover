@@ -25,7 +25,7 @@ FlipCover is a CSS/JS mixin for styling social media links.
 | `text`        | text inside the button   | `css`           |
 | `url`         | link for text            | N/A             |
 | `width`       | width of button          | length of `text`|
-| `height`      | height of button         | 40px            |
+| `height`      | height of button         | 40px (number less 40px will be ignored)|
 
 <br>
 
