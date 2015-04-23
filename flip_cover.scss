@@ -1,4 +1,4 @@
-@mixin flip-cover($name, $content, $color) {
+@mixin flip-cover($name, $content, $color, $height:"") {
   .#{$name}-section, .#{$name}-section * { box-sizing: border-box; }
   .#{$name}-section, .#{$name}-section div { transition-duration: .6s; }
 
@@ -11,6 +11,7 @@
     background:    #A9ADB6;
     border-radius: .25em;
     perspective:   300;
+    height: #{$height};
     box-shadow: 0 -1px 2px #fff,
       inset 0 1px    2px  rgba(0, 0, 0, .2),
       inset 0 .25em 1em rgba(0, 0, 0, .1);
@@ -48,7 +49,7 @@
     background-image: -webkit-linear-gradient(
       top, transparent 0%, rgba(0, 0, 0, .1) 100%);
 
-    &:after { content: $content; }
+    &:after { content: $content; line-height: #{$height} }
   }
 
   .#{$name}-outer { background-color: $color; transform: translateZ(.25em); }
