@@ -1,4 +1,4 @@
-@mixin flip-cover($name, $content, $color, $width) {
+@mixin flip-cover($name, $content, $color) {
   .#{$name}-section, .#{$name}-section * { box-sizing: border-box; }
   .#{$name}-section, .#{$name}-section div { transition-duration: .6s; }
 
@@ -7,8 +7,7 @@
     display:  inline-block;
     position: relative;
     padding:  .375em .375em 0;
-    height:   2.5em;
-    width:    $width;
+    min-height:   2.5em;
     background:    #A9ADB6;
     border-radius: .25em;
     perspective:   300;
