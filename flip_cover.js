@@ -8,7 +8,7 @@ function flipCover (css, options) {
 
   var css = options.css;
   var url = options.url;
-  var text = options.text || "";
+  var text = options.text || css;
 
   var $section = $(".flip-cover-" + css).addClass(css + "-section");
   var $button =  $("<div>").addClass(css + "-button");
