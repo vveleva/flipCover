@@ -2,6 +2,8 @@
 
 FlipCover is a CSS/JS mixin for styling social media links.
 
+![all_buttons][all_buttons]
+
 ### [Demo on CodePen](http://codepen.io/vveleva/pen/Areng)
 
 
@@ -63,7 +65,7 @@ In your CSS file:
 // Call mixins
 @include flip-cover("dribbble", "cover text", #FC1786, 80px);
 ```
-Preview:
+###### Preview:
 
 ![dribbble][dribbble]
 
@@ -84,10 +86,11 @@ CSS:
 ```scss
 @include flip-cover("email", "example", #F80, 80px);
 ```
-Preview:
+###### Preview:
 
 ![email][email]
 
 
+[all_buttons]: ./screenshots/all_buttons.png
 [dribbble]: ./screenshots/dribbble.png
 [email]: ./screenshots/email.png
