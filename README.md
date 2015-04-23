@@ -44,13 +44,13 @@ In your HTML file:
 In your JS file:
 
 ```js
-// Require the file
+// Require file
 //= require flip_cover
 
-// Call the function
+// Call function
 flipCover({"dribbble", { url: "https://dribbble.com/vveleva", text: "vveleva" });
 
-// Or pass everything as an object
+// you can also pass everything as an object
 flipCover({
   css: "dribbble",
   url: "https://dribbble.com/vveleva",
@@ -62,10 +62,10 @@ flipCover({
 In your CSS file:
 
 ```scss
-// Import the mixins
+// Import mixin
 @import "flip_cover.scss"
 
-// Call mixins
+// Call mixin
 @include flip-cover("dribbble", "d", #FC1786);
 ```
 ###### Preview:
