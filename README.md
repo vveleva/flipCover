@@ -25,6 +25,8 @@ FlipCover is a CSS/JS mixin for styling social media links.
 | `text`        | text inside the button   | `css`           |
 | `url`         | link for text            | N/A             |
 | `width`       | width of button          | length of `text`|
+| `height`      | height of button         | 40px            |
+| `font`        | font for `css` and `text`| Helvetica       |
 
 <br>
 
@@ -54,7 +56,8 @@ flipCover({"dribbble", { url: "https://dribbble.com/vveleva", text: "vveleva" })
 flipCover({
   css: "dribbble",
   url: "https://dribbble.com/vveleva",
-  text: "vveleva"
+  text: "vveleva",
+  width: "80px"
 });
 ```
 
@@ -65,7 +68,7 @@ In your CSS file:
 @import "flip_cover.scss"
 
 // Call mixins
-@include flip-cover("dribbble", "d", #FC1786, 80px);
+@include flip-cover("dribbble", "d", #FC1786);
 ```
 ###### Preview:
 
@@ -86,7 +89,7 @@ flipCover("email", { text: "user@example.com" });
 
 CSS:
 ```scss
-@include flip-cover("email", "example", #F80, 80px);
+@include flip-cover("email", "example", #F80);
 ```
 ###### Preview:
 
