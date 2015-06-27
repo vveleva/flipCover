@@ -188,8 +188,9 @@ code {
   color: #000;
   overflow-x: scroll; }
 
+#getting-started strong { color: #a1a7bf; }
+
 h1 {
-  /*color: #31374F;*/
   color: white;
   font-family: 'Slabo 27px', serif;
   font-size: 72px;

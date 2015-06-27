@@ -57,59 +57,48 @@
 		<section id="getting-started" class="blue">
 			<div class="content">
 				<h2 class="margin-40">Usage</h2>
-				<p>Set up your HTML markup.</p>
+				<p>Download <strong>flip_cover.css</strong> and <strong>flip_cover.js</strong> and move them in your project assets.</p>
+        <p>
+          Examples
+        </p>
+        <div>
+          In your HTML file:<br><br>
+
+          <pre><code class="language-markup">
+    &lt;div class="flip-cover-dribbble"&gt;&lt;/div&gt;
+          </code></pre>
+
+          In your JS file:<br><br>
+
+          <pre><code class="language-javascript">
+    //= require flip_cover
+
+    flipCover("dribbble", {
+      url: "https://dribbble.com/vveleva",
+      text: "vveleva"
+    });
+
+    // you can also pass everything as an object
+    flipCover({
+      css: "dribbble",
+      url: "https://dribbble.com/vveleva",
+      text: "vveleva",
+      width: "80px"
+    });
+          </code></pre>
+
+          In your CSS file:<br><br>
+
+  				<pre><code class="language-css">
+    // Import mixin
+    @import "flip_cover.scss"
+
+    // Call mixin
+    @include flip-cover("dribbble", "d", #FC1786);
+  				</code></pre>
+        </div>
 
 
-				<pre><code class="language-javascript">
-          flipCover({
-            css: "dribbble",
-            url: "https://dribbble.com/vveleva",
-            text: "vveleva",
-            width: "80px"
-          });
-
-          flipCover("twiter", {
-            url: "https://twitter.com/vveleva",
-            text: "vveleva",
-            width: "80px"
-          });
-
-          flipCover("linkedin", {
-            url: "https://linkedin.com/in/vveleva",
-            text: "vveleva",
-            width: "80px"
-          });
-
-          flipCover("email", {
-            text: "vvveleva @gmail",
-            width: "80px",
-            height: "50px"
-          });
-          flipCover({
-            css: "dribbble",
-            url: "https://dribbble.com/vveleva",
-            text: "vveleva",
-            width: "80px"
-          });
-
-          flipCover("twiter", {
-            url: "https://twitter.com/vveleva",
-            text: "vveleva",
-            width: "80px"
-          });
-
-          flipCover("linkedin", {
-            url: "https://linkedin.com/in/vveleva",
-            text: "vveleva",
-            width: "80px"
-          });
-
-          flipCover("email", {
-            text: "vvveleva @gmail",
-            width: "80px",
-            height: "50px"
-          });
-				</code></pre>
 			</div>
 		</section>
 
