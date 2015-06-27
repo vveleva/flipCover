@@ -4,7 +4,8 @@ FlipCover is a CSS/JS mixin for styling social media links.
 
 ![all_buttons][all_buttons]
 
-### [Demo on CodePen](http://codepen.io/vveleva/pen/Areng)
+<!-- ### [Demo](http://codepen.io/vveleva/pen/Areng) -->
+[Demo](http://vveleva.com/flipCover/)
 
 
 # API
