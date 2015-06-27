@@ -4,6 +4,7 @@
 <head>
 	<title>flipCover - flip a link</title>
   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./flip_cover.css"/>
 	<link rel="stylesheet" type="text/css" href="./main.css"/>
@@ -21,7 +22,12 @@
 				<h1 class="title">flipCover</h1>
 				<!-- <p class="subheading">flip a link</p> -->
 				<ul class="nav">
-					<li><a href="#getting-started">usage</a></li>
+					<li><a href="#getting-started">
+            <a href="#getting-started" class="tool">
+              <img src="./tool-icon.png" width="32" height="30">
+              <span>usage</span>
+            </a>
+          </a></li>
 					<li>
             <a href="https://github.com/vveleva/flipCover" target="_blank" class="github">
               <img src="./octocat-white-64.png" width="32" height="32" alt="GitHub">
@@ -55,6 +61,30 @@
 
 
 				<pre><code class="language-javascript">
+          flipCover({
+            css: "dribbble",
+            url: "https://dribbble.com/vveleva",
+            text: "vveleva",
+            width: "80px"
+          });
+
+          flipCover("twiter", {
+            url: "https://twitter.com/vveleva",
+            text: "vveleva",
+            width: "80px"
+          });
+
+          flipCover("linkedin", {
+            url: "https://linkedin.com/in/vveleva",
+            text: "vveleva",
+            width: "80px"
+          });
+
+          flipCover("email", {
+            text: "vvveleva @gmail",
+            width: "80px",
+            height: "50px"
+          });
           flipCover({
             css: "dribbble",
             url: "https://dribbble.com/vveleva",
