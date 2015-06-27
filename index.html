@@ -3,10 +3,9 @@
 <html lang="en">
 <head>
 	<title>flipCover - flip a link</title>
-  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./flip_cover.css"/>
+	<link rel="stylesheet" type="text/css" href="./prism.css"/>
 	<link rel="stylesheet" type="text/css" href="./main.css"/>
 	<meta name="description" content="flip a link &amp; much more!">
 	<meta name="keywords" content="flipcover, responsive, carousel, social, jQuery, plugin, CSS3">
@@ -14,6 +13,7 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="./flip_cover.js" type="text/javascript"></script>
+  <script src="./prism.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -57,18 +57,22 @@
 		<section id="getting-started" class="blue">
 			<div class="content">
 				<h2 class="margin-40">Usage</h2>
-				<p>Download <strong>flip_cover.css</strong> and <strong>flip_cover.js</strong> and move them in your project assets.</p>
+				<div>Download <strong>flip_cover.css</strong> and <strong>flip_cover.js</strong> and move them in your project assets.</div>
         <p>
-          Examples
+          <br><br>
+          <h4>Basic Example</h4>
         </p>
+
         <div>
-          In your HTML file:<br><br>
+          In your HTML file:
+          <br><br>
 
           <pre><code class="language-markup">
-    &lt;div class="flip-cover-dribbble"&gt;&lt;/div&gt;
-          </code></pre>
+    &lt;div class="flip-cover-dribbble"&gt;&lt;/div&gt;</code></pre>
 
-          In your JS file:<br><br>
+          <br><br>
+          In your JS file:
+          <br><br>
 
           <pre><code class="language-javascript">
     //= require flip_cover
@@ -84,21 +88,61 @@
       url: "https://dribbble.com/vveleva",
       text: "vveleva",
       width: "80px"
-    });
-          </code></pre>
+    });</code></pre>
 
-          In your CSS file:<br><br>
+          <br><br>
+          In your CSS file:
+          <br><br>
 
-  				<pre><code class="language-css">
+  				<pre><code class="language-scss">
     // Import mixin
     @import "flip_cover.scss"
 
     // Call mixin
-    @include flip-cover("dribbble", "d", #FC1786);
-  				</code></pre>
+    @include flip-cover("dribbble", "d", #FC1786);</code></pre>
         </div>
 
+        <br><br>
+        Preview:
+        <br><br>
+        <p class="example-image">
+          <img src="./screenshots/dribbble.png" alt="dribbble" width="560" />
+        </p>
 
+
+        <p>
+          <br><br>
+          <h4>Example of button without a link</h4>
+        </p>
+        HTML:
+        <br><br>
+
+        <pre><code class="language-markup">
+  &lt;div class="flip-cover-email"&gt;&lt;/div&gt;</code></pre>
+
+        <br><br>
+        JS:
+        <br><br>
+
+        <pre><code class="language-javascript">
+    flipCover("email", { text: "user@example.com" });</code></pre>
+
+        <br><br>
+        CSS:
+        <br><br>
+
+				<pre><code class="language-scss">
+    @include flip-cover("email", "example", #F80);</code></pre>
+        <br><br>
+        Preview:
+        <br><br>
+        <p class="example-image">
+          <img src="./screenshots/email.png" alt="dribbble" width="560" />
+        </p>
+
+
+
+			</div>
 			</div>
 		</section>
 
