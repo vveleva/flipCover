@@ -744,3 +744,20 @@ ul.nav li a {
 
 .example-image { background: white; }
 .example-image img { padding: 30px 0; }
+
+.white.examples { background: white; background-image: none; }
+
+
+.download-button {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 28px;
+  background: #fff;
+  background-image: -webkit-radial-gradient(center top, circle farthest-corner, #FFF 0%, #D8DFE9 100%);
+  background-image: radial-gradient(circle farthest-corner at center top, #FFF 0%, #D8DFE9 100%);
+}
+
+
+.download-button, .download-button:hover { text-decoration: none; }
+.download-button:hover { color: cornflowerblue; }
