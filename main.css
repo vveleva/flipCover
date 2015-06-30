@@ -318,30 +318,34 @@ ul.nav li a {
   /*border-radius: 50%;*/
 }
 
-.github, .tool { position: relative; }
+.github, .tool, .nav-email { position: relative; }
 
-.github span {
+.github span, .tool span, .nav-email span {
   opacity: 0;
   position: absolute;
-  left: 46px;
-  bottom: 12px;
   transition: opacity .5s ease-in-out;
    -moz-transition: opacity .5s ease-in-out;
    -webkit-transition: opacity .5s ease-in-out;
+}
+
+.github:hover span, .tool:hover span, .nav-email:hover span { opacity: 0.5; }
+
+.github span {
+  left: 46px;
+  bottom: 12px;
 }
 
 .tool span {
   padding: 1px 0;
-  opacity: 0;
-  position: absolute;
   right: 46px;
   bottom: 12px;
-  transition: opacity .5s ease-in-out;
-   -moz-transition: opacity .5s ease-in-out;
-   -webkit-transition: opacity .5s ease-in-out;
 }
 
-.github:hover span, .tool:hover span { opacity: 0.5; }
+.nav-email span {
+  padding: 1px 0;
+  top: -45px;
+  transform: translateX(-50%);
+}
 
 @media (max-width: 420px) {
   ul.nav li a {
